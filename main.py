@@ -6,7 +6,7 @@ class Pythagoras:
         self.b_year = b_year
 
     def get_pythagoras(self):
-        calc_str = (self.b_day + self.b_month + self.b_year).replace('0', '')
+        calc_str = (self.b_day + self.b_month + self.b_year).replace('0', "")
         first_num = sum(map(int, calc_str))
         second_num = sum(map(int, str(first_num)))
         third_num = first_num - int(self.b_day.lstrip('0')[0]) * 2
